@@ -24,9 +24,6 @@ const GlobalStyle = createGlobalStyle`
     align-items: center;
   }
 
-  h1, h2, h3, h4 {
-    color: ${({ theme }) => theme.colors.primary.DarkViolet};
-  }
   p {
     color: ${({ theme }) => theme.colors.neutral.GrayishViolet};
   }

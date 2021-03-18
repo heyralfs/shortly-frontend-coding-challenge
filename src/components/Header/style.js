@@ -6,6 +6,7 @@ const HeaderContainer = styled.header`
   top: 0;
   height: 7.5rem;
   color: ${({ theme }) => theme.colors.neutral.Gray};
+  z-index: 9;
 
   & * {
     font-size: 0.85rem;
