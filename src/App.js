@@ -1,5 +1,6 @@
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import GlobalStyle from "./globalStyle";
 import Home from "./pages/Home";
@@ -35,6 +36,7 @@ function App() {
               <Home />
             </Route>
           </Switch>
+          <Footer />
         </ThemeProvider>
       </div>
     </Router>

@@ -36,6 +36,10 @@ const GlobalStyle = createGlobalStyle`
     color: inherit;
   }
 
+  ul {
+    list-style: none;
+  }
+
   button {
     cursor: pointer;
     border: none;
