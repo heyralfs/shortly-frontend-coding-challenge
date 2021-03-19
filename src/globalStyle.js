@@ -2,6 +2,9 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   
+  :root {
+    --teste: #ff7700;
+  }
   * {
     box-sizing: border-box;
     margin: 0;
