@@ -2,9 +2,14 @@ import styled from "styled-components";
 
 const Section = styled.section`
   width: 100%;
-  height: 100vh;
-  background: url(${(props) => props.bg}) right bottom no-repeat;
-  background-position-x: 110%;
+  height: 40rem;
+
+  .main--img {
+    background: url(${(props) => props.bg}) left center no-repeat;
+
+    height: 100%;
+    width: 200%;
+  }
 
   .container {
     display: grid;

@@ -18,6 +18,7 @@ const MainSection = () => {
 
           <button className="btn">Get Started</button>
         </div>
+        <div className="main--img"></div>
       </div>
     </Section>
   );
