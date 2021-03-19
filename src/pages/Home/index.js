@@ -1,5 +1,6 @@
 import React from "react";
 import MainSection from "./MainSection";
+import CardsSection from "./CardsSection";
 import ShortenItSection from "./ShortenSection";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <>
       <MainSection />
       <ShortenItSection />
+      <CardsSection />
     </>
   );
 };
