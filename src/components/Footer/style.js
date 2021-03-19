@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const FooterContainer = styled.footer`
   width: 100%;
-  height: 312px; // corrigir ****************************
   padding: 4rem 0;
 
   background: ${({ theme }) => theme.colors.neutral.VeryDarkViolet};
