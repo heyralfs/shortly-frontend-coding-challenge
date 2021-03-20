@@ -42,13 +42,10 @@ const Shorter = ({ shortenedUrls, setShortenedUrls }) => {
           onChange={({ target }) => setUrl(target.value)}
           className={error && "error"}
         />
-        {isLoading ? (
-          <button disabled className="btn">
-            Shortening...
-          </button>
-        ) : (
-          <button className="btn">Shorten It!</button>
-        )}
+
+        <button disabled={isLoading} className="btn">
+          {isLoading ? "Shortening..." : "Shorten It!"}
+        </button>
       </form>
       {error && <span className="errorMessage">{error}</span>}
     </FormContainer>

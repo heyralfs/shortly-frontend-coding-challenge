@@ -43,6 +43,9 @@ const FormContainer = styled.div`
 
   .btn {
     padding: 0 2rem;
+    &:disabled {
+      cursor: wait;
+    }
   }
 
   .errorMessage {

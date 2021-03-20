@@ -7,11 +7,13 @@ const ShortenedUrl = ({ original, short }) => {
   function copyToClipboard() {
     navigator.clipboard.writeText(short);
 
-    setCopied(true);
+    if (!copied) {
+      setCopied(true);
 
-    setTimeout(() => {
-      setCopied(false);
-    }, 3000);
+      setTimeout(() => {
+        setCopied(false);
+      }, 3000);
+    }
   }
 
   return (
