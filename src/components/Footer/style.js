@@ -23,6 +23,10 @@ const FooterContainer = styled.footer`
 
   a {
     color: ${({ theme }) => theme.colors.neutral.Gray};
+    transition: all 200ms;
+    &:hover {
+      color: ${({ theme }) => theme.colors.primary.Cyan};
+    }
   }
 
   .footer--features,
@@ -37,6 +41,14 @@ const FooterContainer = styled.footer`
     ul {
       display: flex;
       justify-content: space-evenly;
+    }
+    a {
+      path {
+        transition: all 200ms;
+      }
+      &:hover path {
+        fill: ${({ theme }) => theme.colors.primary.Cyan};
+      }
     }
   }
 `;

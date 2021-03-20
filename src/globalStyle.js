@@ -43,10 +43,10 @@ const GlobalStyle = createGlobalStyle`
   button {
     cursor: pointer;
     border: none;
-  }
-  button:hover,
-  button:focus {
-    outline: none;
+    &:hover,
+    &:focus {
+      outline: none;
+    }
   }
 
   .btn {
@@ -54,6 +54,12 @@ const GlobalStyle = createGlobalStyle`
     text-transform: capitalize;
     background: ${({ theme }) => theme.colors.primary.Cyan};
     border-radius: 1rem;
+    transition: all 200ms;
+
+    &:hover {
+      background: #9be3e2;
+    }
+
   }
 
   #root {

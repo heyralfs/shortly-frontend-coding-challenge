@@ -41,6 +41,10 @@ const HeaderContainer = styled.header`
     list-style: none;
     display: inline-block;
     margin-right: 2rem;
+    transition: all 200ms;
+    &:hover {
+      color: ${({ theme }) => theme.colors.neutral.VeryDarkViolet};
+    }
   }
 
   .login {
