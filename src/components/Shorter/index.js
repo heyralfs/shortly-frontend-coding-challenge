@@ -15,7 +15,7 @@ const Shorter = ({ shortenedUrls, setShortenedUrls }) => {
     if (url.length > 0) {
       const response = await request(url);
 
-      if (response.ok) {
+      if (response && response.ok) {
         setShortenedUrls([
           ...shortenedUrls,
           {
