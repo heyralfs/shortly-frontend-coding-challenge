@@ -3,10 +3,17 @@ import Section from "./style";
 import Shorter from "../../../components/Shorter";
 
 const ShortenSection = () => {
+  const [shortenedUrls, setShortenedUrls] = React.useState([]);
+
   return (
-    <Section>
-      <Shorter />
-    </Section>
+    <>
+      <Section>
+        <Shorter
+          shortenedUrls={shortenedUrls}
+          setShortenedUrls={setShortenedUrls}
+        />
+      </Section>
+    </>
   );
 };
 
