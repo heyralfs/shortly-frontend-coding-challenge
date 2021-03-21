@@ -70,7 +70,12 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     max-width: 1100px;
     margin: auto;
+
+    @media (max-width: 768px) {
+      padding: 0 1.3rem;
+    }
   }
+  
 `;
 
 export default GlobalStyle;

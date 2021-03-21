@@ -55,6 +55,26 @@ const HeaderContainer = styled.header`
     padding: 0.4rem 1rem;
     margin-left: 2rem;
   }
+
+  @media (max-width: 768px) {
+    .mobileMenuIcon {
+      color: ${({ theme }) => theme.colors.primary.Gray};
+      position: absolute;
+      right: 1.3rem;
+      top: 3rem;
+      cursor: pointer;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 1.2rem;
+        height: 2px;
+        border-radius: 2px;
+        background: currentColor;
+        box-shadow: 0 6px currentColor, 0 -6px currentColor;
+      }
+    }
+  }
 `;
 
 export default HeaderContainer;

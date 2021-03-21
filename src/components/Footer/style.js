@@ -51,6 +51,34 @@ const FooterContainer = styled.footer`
       }
     }
   }
+
+  @media (max-width: 768px) {
+    text-align: center;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+
+    .footer--logo {
+      margin-bottom: 3rem;
+    }
+
+    .footer--features,
+    .footer--resources,
+    .footer--company {
+      margin-bottom: 2.5rem;
+    }
+
+    .footer--socialLinks {
+      width: 100%;
+      max-width: 9rem;
+      ul {
+      }
+    }
+  }
 `;
 
 export default FooterContainer;

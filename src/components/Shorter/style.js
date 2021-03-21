@@ -54,6 +54,31 @@ const FormContainer = styled.div`
     color: ${({ theme }) => theme.colors.secondary.Red};
     font-size: 0.9rem;
   }
+
+  @media (max-width: 768px) {
+    width: calc(100% - 2.6rem);
+    margin: 0 1.3rem;
+    padding: 1.2rem;
+
+    background: ${({ theme }) => theme.colors.primary.DarkViolet}
+      url(${(props) => props.bgMobile}) no-repeat center center;
+    background-size: cover;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 0;
+
+      input,
+      .btn {
+        height: 2.8rem;
+        border: none;
+        margin: 0;
+        padding: 0 1rem;
+      }
+    }
+  }
 `;
 
 export default FormContainer;

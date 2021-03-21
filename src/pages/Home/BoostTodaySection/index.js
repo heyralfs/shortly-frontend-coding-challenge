@@ -6,9 +6,11 @@ import BoostBgMobile from "../../../images/bg-boost-mobile.svg";
 const BoostTodaySection = () => {
   return (
     <Section bgDesktop={BoostBgDesktop} bgMobile={BoostBgMobile}>
-      <h1>Boost your links today</h1>
+      <div className="container">
+        <h1>Boost your links today</h1>
 
-      <button className="btn">Get Started</button>
+        <button className="btn">Get Started</button>
+      </div>
     </Section>
   );
 };

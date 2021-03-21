@@ -41,6 +41,22 @@ const CardBody = styled.div`
       font-size: 0.8rem;
     }
   }
+
+  @media (max-width: 768px) {
+    margin: 0 auto;
+    z-index: 2;
+
+    text-align: center;
+
+    .card--icon {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &.card--2,
+    &.card--3 {
+      top: 0;
+    }
+  }
 `;
 
 export default CardBody;

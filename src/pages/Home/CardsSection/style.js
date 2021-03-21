@@ -35,6 +35,44 @@ const Section = styled.section`
     position: relative;
     top: 65%;
   }
+
+  @media (max-width: 768px) {
+    padding-bottom: 5rem;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+
+      .text {
+        margin-top: 5rem;
+
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        p {
+          br {
+            display: none;
+          }
+        }
+      }
+
+      .cards {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+
+        .cards--divisor {
+          height: 5rem;
+          width: 0.5rem;
+          background-color: ${({ theme }) => theme.colors.primary.Cyan};
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 1;
+        }
+      }
+    }
+  }
 `;
 
 export default Section;

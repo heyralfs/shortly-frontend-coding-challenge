@@ -7,23 +7,21 @@ const ShortenSection = () => {
   const [shortenedUrls, setShortenedUrls] = React.useState([]);
 
   return (
-    <>
-      <Section>
-        <div className="shorterWrapper">
-          <Shorter
-            shortenedUrls={shortenedUrls}
-            setShortenedUrls={setShortenedUrls}
-          />
+    <Section>
+      <div className="shorterWrapper">
+        <Shorter
+          shortenedUrls={shortenedUrls}
+          setShortenedUrls={setShortenedUrls}
+        />
+      </div>
+      <div className="resultsWrapper">
+        <div className="container">
+          {shortenedUrls.map((url) => (
+            <ShortenedUrl original={url.originalLink} short={url.shortLink} />
+          ))}
         </div>
-        <div className="resultsWrapper">
-          <div className="container">
-            {shortenedUrls.map((url) => (
-              <ShortenedUrl original={url.originalLink} short={url.shortLink} />
-            ))}
-          </div>
-        </div>
-      </Section>
-    </>
+      </div>
+    </Section>
   );
 };
 

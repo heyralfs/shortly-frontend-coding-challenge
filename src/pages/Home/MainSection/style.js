@@ -6,7 +6,6 @@ const Section = styled.section`
 
   .main--img {
     background: url(${(props) => props.bg}) left center no-repeat;
-
     height: 100%;
     width: 200%;
   }
@@ -41,6 +40,46 @@ const Section = styled.section`
     width: 10rem;
     height: 3rem;
     border-radius: 3rem;
+  }
+
+  // mobile
+  @media (max-width: 768px) {
+    height: auto;
+
+    .container {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0;
+
+      .main--img {
+        margin-top: 3rem;
+        width: 100%;
+        min-height: 100vw;
+        background-position-x: left;
+        background-size: 130%;
+      }
+
+      & > div {
+        padding: 0 1.3rem;
+        text-align: center;
+
+        h1 {
+          font-size: 2.3rem;
+          margin-bottom: 1.5rem;
+        }
+
+        h2 {
+          font-size: 1rem;
+          br {
+            display: none;
+          }
+        }
+
+        .btn {
+          margin: 1.5rem auto 5rem auto;
+        }
+      }
+    }
   }
 `;
 

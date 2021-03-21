@@ -23,6 +23,24 @@ const Section = styled.section`
     height: 4rem;
     border-radius: 5rem;
   }
+
+  @media (max-width: 768px) {
+    background: ${({ theme }) => theme.colors.primary.DarkViolet}
+      url(${(props) => props.bgMobile});
+    text-align: center;
+    height: 16rem;
+
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      width: 10rem;
+      height: 3rem;
+      border-radius: 5rem;
+    }
+  }
 `;
 
 export default Section;
