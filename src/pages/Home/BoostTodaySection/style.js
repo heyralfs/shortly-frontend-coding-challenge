@@ -11,6 +11,7 @@ const Section = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 
   h1 {
     color: white;
@@ -27,7 +28,6 @@ const Section = styled.section`
   @media (max-width: 768px) {
     background: ${({ theme }) => theme.colors.primary.DarkViolet}
       url(${(props) => props.bgMobile});
-    text-align: center;
     height: 16rem;
 
     h1 {
