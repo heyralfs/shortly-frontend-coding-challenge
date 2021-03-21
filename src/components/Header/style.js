@@ -57,11 +57,20 @@ const HeaderContainer = styled.header`
   }
 
   @media (max-width: 768px) {
+    position: fixed;
+    height: 4rem;
+
+    transition: all 200ms;
+    &.bg-white {
+      background: white;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    }
+
     .mobileMenuIcon {
       color: ${({ theme }) => theme.colors.primary.Gray};
       position: absolute;
       right: 1.3rem;
-      top: 3rem;
+      top: 1.75rem;
       cursor: pointer;
 
       &:after {
