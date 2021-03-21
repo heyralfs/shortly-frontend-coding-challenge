@@ -3,11 +3,14 @@ import FormContainer from "./style";
 import bgDesktop from "../../images/bg-shorten-desktop.svg";
 import bgMobile from "../../images/bg-shorten-mobile.svg";
 import useShrtcodeApi from "../../hooks/useShrtcodeApi";
+import useMediaQuery from "../../hooks/useMediaQuery";
 
 const Shorter = ({ shortenedUrls, setShortenedUrls }) => {
   const [url, setUrl] = React.useState("");
 
   const { request, isLoading, error, setError } = useShrtcodeApi();
+
+  const isMobile = useMediaQuery("(max-width: 768px");
 
   async function handleSubmit(event) {
     event.preventDefault();
@@ -43,11 +46,13 @@ const Shorter = ({ shortenedUrls, setShortenedUrls }) => {
           className={error && "error"}
         />
 
+        {error && isMobile && <span className="errorMessage">{error}</span>}
+
         <button disabled={isLoading} className="btn">
           {isLoading ? "Shortening..." : "Shorten It!"}
         </button>
       </form>
-      {error && <span className="errorMessage">{error}</span>}
+      {error && !isMobile && <span className="errorMessage">{error}</span>}
     </FormContainer>
   );
 };

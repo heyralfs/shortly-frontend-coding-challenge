@@ -40,6 +40,34 @@ const ResultBox = styled.div`
       background: ${({ theme }) => theme.colors.primary.DarkViolet};
     }
   }
+
+  @media (max-width: 768px) {
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+
+    .original,
+    .short {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      height: 3rem;
+      padding: 0 1.3rem;
+    }
+
+    .original {
+      border-bottom: 1px solid #f0f1f6;
+    }
+
+    .btn {
+      width: calc(100% - 2.6rem);
+      margin: auto;
+      margin-bottom: 1rem;
+      border-radius: 0.3rem;
+    }
+  }
 `;
 
 export default ResultBox;

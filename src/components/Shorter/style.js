@@ -78,6 +78,13 @@ const FormContainer = styled.div`
         padding: 0 1rem;
       }
     }
+
+    .errorMessage {
+      font-size: 0.8rem;
+      position: relative;
+      margin-top: -0.8rem;
+      margin-bottom: -0.2rem;
+    }
   }
 `;
 
