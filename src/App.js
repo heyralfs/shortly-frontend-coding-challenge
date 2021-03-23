@@ -32,7 +32,7 @@ function App() {
 
           <Header />
           <Switch>
-            <Route exact path="/">
+            <Route path="/shortly-frontend-coding-challenge">
               <Home />
             </Route>
           </Switch>

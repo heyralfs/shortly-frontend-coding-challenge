@@ -7,19 +7,19 @@ const MobileMenu = ({ active }) => {
     <MenuContainer className={active ? "active" : ""}>
       <ul className="navLinks">
         <li className="navLinksItem">
-          <NavLink to="/">Features</NavLink>
+          <NavLink to="/shortly-frontend-coding-challenge">Features</NavLink>
         </li>
         <li className="navLinksItem">
-          <NavLink to="/">Pricing</NavLink>
+          <NavLink to="/shortly-frontend-coding-challenge">Pricing</NavLink>
         </li>
         <li className="navLinksItem">
-          <NavLink to="/">Resources</NavLink>
+          <NavLink to="/shortly-frontend-coding-challenge">Resources</NavLink>
         </li>
       </ul>
       <hr />
       <ul className="authLinks">
         <li>
-          <NavLink to="/"> Login </NavLink>
+          <NavLink to="/shortly-frontend-coding-challenge"> Login </NavLink>
         </li>
         <li>
           <button className="btn signUp">Sign Up</button>

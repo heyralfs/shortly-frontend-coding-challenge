@@ -32,20 +32,26 @@ const Header = () => {
       <HeaderContainer className={scrolled ? "bg-white" : ""}>
         <div className="container">
           <nav>
-            <NavLink to="/">
+            <NavLink to="/shortly-frontend-coding-challenge">
               <Logo className="logo" />
             </NavLink>
 
             {!isMobile && (
               <ul className="navLinks">
                 <li className="navLinksItem">
-                  <NavLink to="/">Features</NavLink>
+                  <NavLink to="/shortly-frontend-coding-challenge">
+                    Features
+                  </NavLink>
                 </li>
                 <li className="navLinksItem">
-                  <NavLink to="/">Pricing</NavLink>
+                  <NavLink to="/shortly-frontend-coding-challenge">
+                    Pricing
+                  </NavLink>
                 </li>
                 <li className="navLinksItem">
-                  <NavLink to="/">Resources</NavLink>
+                  <NavLink to="/shortly-frontend-coding-challenge">
+                    Resources
+                  </NavLink>
                 </li>
               </ul>
             )}
