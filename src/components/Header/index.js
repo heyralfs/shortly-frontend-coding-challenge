@@ -64,11 +64,12 @@ const Header = () => {
             </div>
           ) : (
             <div
-              className="mobileMenuIcon"
               onClick={() =>
                 setMobileMenuActive((mobileMenuActive) => !mobileMenuActive)
               }
-            ></div>
+            >
+              <span className="mobileMenuIcon"></span>
+            </div>
           )}
         </div>
       </HeaderContainer>

@@ -70,7 +70,8 @@ const HeaderContainer = styled.header`
       color: ${({ theme }) => theme.colors.primary.Gray};
       position: absolute;
       right: 1.3rem;
-      top: 1.75rem;
+      top: 1.5em;
+      padding: 0.5rem;
       cursor: pointer;
 
       &:after {
