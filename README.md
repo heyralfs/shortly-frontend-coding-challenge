@@ -2,7 +2,7 @@
 
 Front-end coding challenge | [Frontend Mentor](https://www.frontendmentor.io/)
 
-🚧 Under construction... 🚧
+You can test it on https://heyralfs.github.io/shortly-frontend-coding-challenge/
 
 ## Desktop preview
 
